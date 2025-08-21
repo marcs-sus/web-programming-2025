@@ -1,0 +1,25 @@
+fieldset {
+    border: 2px solid #8a8888;
+    padding: 10px;
+    margin: 20px 0;
+    width: 50%;
+}
+
+img {
+    border: 5px solid #8a8888;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+video {
+    border: 5px solid #8a8888;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+hr {
+    border: 2px solid #8a8888;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 50%;
+}
