@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav li a {
+  display: inline;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
+
+aside ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+aside ul li {
+  margin-bottom: 5px;
+}
+
+#biografia {
+  margin: 20px;
+  padding: 20px;
+  background-color: lightgray;
+}

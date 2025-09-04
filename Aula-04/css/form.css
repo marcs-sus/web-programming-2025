@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 2000px;
+  margin: auto;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  width: 50%;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+legend {
+  font-weight: bold;
+  font-size: larger;
+  padding: 0 10px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+#container-01 {
+  background-color: lightblue;
+}
+
+#container-02 {
+  background-color: lightgreen;
+}
+
+#container-03 {
+  background-color: lightcoral;
+}
