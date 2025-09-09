@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js" defer></script>
+    <title>Aula 05</title>
+</head>
+<header>
+    <h1>Aula 05</h1>
+</header>
+
+<body>
+    <div class="calculator">
+        <h2>Calculadora</h2>
+        <input type="number" id="num1" placeholder="Número 1" required>
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+        </select>
+        <input type="number" id="num2" placeholder="Número 2" required>
+        <br>
+        <button onclick="calculate()">Calcular</button>
+        <div id="result"></div>
+    </div>
+</body>
+
+</html>
