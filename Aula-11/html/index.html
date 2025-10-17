@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+<script defer>
+    function submitForm(file) {
+        form = document.getElementById("insert-form");
+        form.action = file;
+        form.submit();
+    }
+</script>
+
+<header>
+    <h1>Aula 11</h1>
+</header>
+
+<body>
+    <fieldset>
+        <h2>Cadastrar Pessoa</h2>
+        <form method="post" id="insert-form">
+            <label for="pesnome">Nome:</label>
+            <input type="text" name="pesnome" id="pesnome" placeholder="Nome" maxlength="100" required>
+            <br>
+            <label for="pessobrenome">Sobrenome:</label>
+            <input type="text" name="pessobrenome" id="pessobrenome" placeholder="Sobrenome" maxlength="100" required>
+            <br>
+            <label for="pesemail">E-mail:</label>
+            <input type="email" name="pesemail" id="pesemail" placeholder="email@dominio.com" required>
+            <br>
+            <label for="pespassword">Senha:</label>
+            <input type="password" name="pespassword" id="pespassword" placeholder="Senha" required>
+            <br>
+            <label for="pescidade">Cidade:</label>
+            <input type="text" name="pescidade" id="pescidade" placeholder="Cidade" maxlength="100" required>
+            <br>
+            <label for="pesestado">Estado:</label>
+            <select name="pesestado" id="pesestado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+            <br>
+            <input type="submit" value="Cadastrar" onclick="submitForm('../php/insert.php')">
+            <input type="submit" value="Gravar" onclick="submitForm('../php/save.php')">
+        </form>
+    </fieldset>
+    <fieldset>
+        <h2>Pesquisar Pessoa</h2>
+        <form action="../php/search.php" method="get">
+            <label for="search">Pesquisar:</label>
+            <input type="text" name="search" id="search" maxlength="100" required>
+            <input type="submit" value="Pesquisar">
+        </form>
+    </fieldset>
+</body>
+
+</html>
